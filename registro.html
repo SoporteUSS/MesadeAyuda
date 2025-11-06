@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Usuario - USS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="registro-container">
+    <img src="img/uss.jpg" alt="Logo USS" class="logo">
+    <h2>Registro de Usuario</h2>
+
+    <form id="registroForm" class="form">
+      <input type="text" id="nombres" placeholder="Apellidos y Nombres" required>
+      <input type="text" id="dni" placeholder="DNI" required>
+      <input type="email" id="correo" placeholder="Correo institucional" required>
+      <input type="tel" id="celular" placeholder="Celular" required>
+
+      <label for="tipoUsuario">Tipo de usuario:</label>
+      <select id="tipoUsuario" required onchange="mostrarCampos()">
+        <option value="">Seleccione...</option>
+        <option value="Alumno">Alumno</option>
+        <option value="Docente">Docente</option>
+        <option value="Administrativo">Administrativo</option>
+      </select>
+
+      <div id="facultadField" class="extra-field" style="display:none;">
+        <label>Facultad:</label>
+        <input type="text" id="facultad" placeholder="Ingrese su facultad">
+      </div>
+
+      <div id="areaField" class="extra-field" style="display:none;">
+        <label>Área:</label>
+        <input type="text" id="area" placeholder="Ingrese su área administrativa">
+      </div>
+
+      <input type="password" id="password" placeholder="Cree una contraseña" required>
+      <button type="submit" class="btn">Registrar</button>
+    </form>
+
+    <p class="registro-link"><a href="index.html">Volver al inicio</a></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

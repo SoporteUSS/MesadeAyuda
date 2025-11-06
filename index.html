@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Tickets - USS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="img/uss.jpg" alt="Logo USS" class="logo">
+    <h2>Portal de Tickets - Universidad Señor de Sipán</h2>
+
+    <form id="loginForm" class="form">
+      <input type="email" id="email" placeholder="Correo electrónico" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <button type="submit" class="btn">Iniciar sesión</button>
+      <button type="button" class="btn-secondary" onclick="window.location.href='ticket.html'">Ingresar como invitado</button>
+    </form>
+
+    <p class="registro-link">¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

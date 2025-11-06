@@ -1,0 +1,79 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #002855, #005fa3);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 90px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input, 
+.form select, 
+.form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  font-size: 16px;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.btn {
+  background-color: #ffb703;
+  color: #002855;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffc94a;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #002855;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.login-container, .registro-container, .ticket-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.registro-link {
+  text-align: center;
+  margin-top: 15px;
+}

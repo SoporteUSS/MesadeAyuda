@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuevo Ticket - USS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="ticket-container">
+    <img src="img/uss.jpg" alt="Logo USS" class="logo">
+    <h2>Registro de Ticket</h2>
+
+    <form id="ticketForm" class="form">
+      <label for="tipoUsuario">Tipo de Usuario</label>
+      <select id="tipoUsuarioTicket" required onchange="actualizarCamposPorUsuario()">
+        <option value="">Seleccione...</option>
+        <option value="Alumno">Alumno</option>
+        <option value="Docente">Docente</option>
+        <option value="Administrativo">Administrativo</option>
+      </select>
+
+      <div id="camposDinamicos"></div>
+
+      <textarea id="descripcion" placeholder="Describa el problema..." required></textarea>
+      <input type="file" id="adjunto">
+      <button type="submit" class="btn">Enviar Ticket</button>
+    </form>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
